@@ -557,6 +557,7 @@ def main(opt):
         if WORLD_SIZE > 1 and RANK == 0:
             _ = [print('Destroying process group... ', end=''), dist.destroy_process_group(), print('Done.')]
 
+    ## Optimizing finetuning for transfer learning- Lan_ 11/19/23 
     # Evolve hyperparameters (optional)
     else:
         # Hyperparameter evolution metadata (mutation scale 0-1, lower_limit, upper_limit)
